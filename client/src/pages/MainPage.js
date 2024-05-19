@@ -3,7 +3,7 @@ import React from 'react'
 export default function MainPage () {
   return (
     <div>
-        <h1>Convert Your Currencies Today</h1>
+        <h1 className='text-4xl font-bold text-green-500'>Convert Your Currencies Today</h1>
         <p>Melcome to "Convert Your Currencies Today" This application allows
          you to easily convert currencies based on the latest exchange rates.
          Whether you're planning a trip, managing your finances,
