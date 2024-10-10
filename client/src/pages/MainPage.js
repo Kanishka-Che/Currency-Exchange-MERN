@@ -105,7 +105,7 @@ export default function MainPage() {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold text-yellow-500 border">
+      <h1 className="text-5xl font-bold text-yellow-500 ">
         Let's explore currency conversion simply
       </h1>
       <p className="lg:mx-32 opacity-40 py-5 font-bold text-white">
