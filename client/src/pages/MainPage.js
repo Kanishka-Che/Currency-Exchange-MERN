@@ -108,20 +108,20 @@ export default function MainPage() {
       <h1 className="text-5xl font-bold text-yellow-500 ">
         Let's explore currency conversion simply
       </h1>
-      <p className="lg:mx-32 opacity-40 py-5 font-bold text-white">
+      <p className="lg:mx-32 opacity-100 py-5 font-bold text-black">
         "Welcome to 'Convert your money' today! Easily convert 
         money with the latest rates. Plan trips, manage finances, 
         or explore currency values effortlessly with our tool."
       </p>
 
-      <div className="mt-5 flex items-center justify-center flex-col">
+      <div className="mt-5 flex items-center justify-center flex-col text-black-500">
         <section className="w-full lg:w-1/2">
           <form onSubmit={getTheTargetAmount}>
             {/* Date input */}
             <div className="mb-4">
               <label
                 htmlFor="date"
-                className="block mb-2 text-sm font-medium text-yellow-900 dark:text-white">
+                className="block mb-2 text-sm font-medium text-yellow-900 text-black">
                 Date
               </label>
               <input
@@ -142,7 +142,7 @@ export default function MainPage() {
             <div className="mb-4">
               <label
                 htmlFor="sourceCurrency"
-                className="block mb-2 text-sm font-medium text-yellow-900 dark:text-white">
+                className="block mb-2 text-sm font-medium text-yellow-900 dark:text-black">
                 Source Currency
               </label>
               <select
@@ -170,7 +170,7 @@ export default function MainPage() {
             <div className="mb-4">
               <label
                 htmlFor="targetCurrency"
-                className="block mb-2 text-sm font-medium text-yellow-900 dark:text-white">
+                className="block mb-2 text-sm font-medium text-yellow-900 text-black">
                 Target Currency
               </label>
               <select
@@ -198,7 +198,7 @@ export default function MainPage() {
             <div className="mb-4">
               <label
                 htmlFor="amountInSourceCurrency"
-                className="block mb-2 text-sm font-medium text-yellow-900 dark:text-white">
+                className="block mb-2 text-sm font-medium text-yellow-900 text-black">
                 Amount In Source Currency
               </label>
               <input
@@ -209,7 +209,7 @@ export default function MainPage() {
                 className="bg-yellow-50 border border-yellow-300 text-yellow-900
                   text-sm rounded-lg focus:ring-yellow-500 
                   focus:border-yellow-500 block w-full p-2.5 dark:bg-yellow-700 
-                  dark:border-yellow-600 dark:placeholder-yellow-400 dark:text-white 
+                  dark:border-yellow-600 dark:placeholder-yellow-400 text-black
                   dark:focus:ring-yellow-500 dark:focus:border-yellow-500"
                 placeholder="Amount in source currency..."
                 required
@@ -224,7 +224,7 @@ export default function MainPage() {
         </section>
 
         {/* Conversion result */}
-        <h3 className="flex items-center justify-start py-5 text-lg">
+        <h3 className="flex items-center justify-start py-5 text-lg text-black">
           {pressed && (
             <div>
               <span className="text-xl">{amountInSourceCurrency}</span>{" "}
